@@ -1,6 +1,6 @@
 ﻿<?php
 /**
-* Message translations for \kartik\password\StrengthValidator.
+* Message translations for \tondakal\password\StrengthValidator.
 *
 * It contains the localizable messages extracted from source code.
 * You may modify this file by translating the extracted messages.

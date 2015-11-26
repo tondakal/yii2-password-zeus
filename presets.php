@@ -7,7 +7,7 @@
  * @version   1.5.3
  */
 
-namespace kartik\password;
+namespace tondakal\password;
 
 return [
     StrengthValidator::SIMPLE => [

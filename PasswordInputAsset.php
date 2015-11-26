@@ -7,7 +7,7 @@
  * @version   1.5.3
  */
 
-namespace kartik\password;
+namespace tondakal\password;
 
 /**
  * Asset bundle for PasswordInput Widget
@@ -15,7 +15,7 @@ namespace kartik\password;
  * @author Kartik Visweswaran <kartikv2@gmail.com>
  * @since 1.0
  */
-class PasswordInputAsset extends \kartik\base\AssetBundle
+class PasswordInputAsset extends \tondakal\base\AssetBundle
 {
     public function init()
     {

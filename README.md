@@ -79,7 +79,7 @@ to the ```require``` section of your `composer.json` file.
 ### StrengthValidator
 ```php
 // add this in your model
-use kartik\password\StrengthValidator;
+use tondakal\password\StrengthValidator;
 
 // use the validator in your model rules
 public function rules() {
@@ -93,8 +93,8 @@ public function rules() {
 ### PasswordInput
 ```php
 // add this in your view
-use kartik\password\PasswordInput;
-use kartik\widgets\ActiveForm; // optional
+use tondakal\password\PasswordInput;
+use tondakal\widgets\ActiveForm; // optional
 
 $form = ActiveForm::begin(['id' => 'login-form']);
 echo $form->field($model,'username');

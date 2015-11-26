@@ -7,7 +7,7 @@
  * @version   1.5.3
  */
 
-namespace kartik\password;
+namespace tondakal\password;
 
 use Yii;
 use yii\helpers\Html;
@@ -25,7 +25,7 @@ use yii\base\InvalidConfigException;
  * @since 1.0
  * @see http://plugins.krajee.com/strength-meter
  */
-class PasswordInput extends \kartik\base\InputWidget
+class PasswordInput extends \tondakal\base\InputWidget
 {
     /**
      * @var string the password strength meter language. If not provided or

@@ -7,7 +7,7 @@
  * @version   1.5.3
  */
 
-namespace kartik\password;
+namespace tondakal\password;
 
 /**
  * Asset bundle for StrengthValidator
@@ -15,7 +15,7 @@ namespace kartik\password;
  * @author Kartik Visweswaran <kartikv2@gmail.com>
  * @since 1.0
  */
-class StrengthValidatorAsset extends \kartik\base\AssetBundle
+class StrengthValidatorAsset extends \tondakal\base\AssetBundle
 {
     public $depends = [
         'yii\web\JqueryAsset'
