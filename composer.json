@@ -1,5 +1,5 @@
 {
-	"name": "kartik-v/yii2-password",
+	"name": "tondakal/yii2-password-zeus",
 	"description": "Useful password strength validation utilities for Yii Framework 2.0",
 	"keywords": ["yii", "yii2", "extension", "password", "strength", "auth", "input", "form", "bootstrap", "jquery"],
 	"homepage": "https://github.com/kartik-v/yii2-password",
@@ -18,7 +18,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"kartik\\password\\": ""
+			"tondakal\\password\\": ""
 		}
 	}
 }
