@@ -90,7 +90,7 @@ class StrengthValidator extends \yii\validators\Validator
             'int' => true
         ]
     ];
-
+	public $username;
     /**
      * @var boolean check whether password contains the username
      */
@@ -302,7 +302,11 @@ class StrengthValidator extends \yii\validators\Validator
             return;
         }
         $label = $model->getAttributeLabel($attribute);
-        $username = Html::getAttributeValue($model, $this->userAttribute);
+        if (!empty($this->username)){
+        	$username =$this->username;
+        }else {
+        	$username = Html::getAttributeValue($model, $this->userAttribute);
+        }
         $temp = [];
 
         foreach (self::$_rules as $rule => $setup) {
@@ -353,6 +357,7 @@ class StrengthValidator extends \yii\validators\Validator
         $label = $model->getAttributeLabel($attribute);
         $options = ['strError' => Html::encode(Yii::t('kvpwdstrength', $this->message, ['attribute' => $label]))];
         $options['userField'] = '#' . Html::getInputId($model, $this->userAttribute);
+        $options['username'] = $value = Html::getAttributeValue($model, $this->userAttribute);
         foreach (self::$_rules as $rule => $setup) {
             $param = "{$rule}Error";
             if ($this->$rule !== null) {
