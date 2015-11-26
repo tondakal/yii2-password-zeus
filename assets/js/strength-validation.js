@@ -54,8 +54,12 @@ var kvStrengthValidator = {
             self.addMessage(messages, options.strError, value);
             return;
         }
-        var patterns = self.findPatterns(value), len = value.length || 0,
-            username = $(options.userField).val();
+        var patterns = self.findPatterns(value), len = value.length || 0;
+        if (self.isEmpty(options.username)){ 
+        	var username = $(options.userField).val();
+        }else {
+        	var username = options.username;
+        }
         if (compare(len, '<', options.min)) {
             self.addError(messages, options.minError, options.min, len);
         }

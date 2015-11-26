@@ -90,6 +90,7 @@ class StrengthValidator extends \yii\validators\Validator
             'int' => true
         ]
     ];
+
     /**
      * @var boolean check whether password contains the username
      */
